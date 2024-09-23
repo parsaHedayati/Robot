@@ -1,0 +1,56 @@
+[1.322s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/parsa/ros2_urdf_ws']
+[1.323s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/parsa/ros2_urdf_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e8bc41ffbe0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7e8bc41feb90>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7e8bc41feb90>>, mixin_verb=('list',))
+[5.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.158s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/parsa/ros2_urdf_ws'
+[5.159s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extensions ['ignore', 'ignore_ament_install']
+[5.159s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'ignore'
+[5.170s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'ignore_ament_install'
+[5.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extensions ['colcon_pkg']
+[5.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'colcon_pkg'
+[5.171s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extensions ['colcon_meta']
+[5.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'colcon_meta'
+[5.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extensions ['ros']
+[5.172s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'ros'
+[5.486s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extensions ['cmake', 'python']
+[5.486s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'cmake'
+[5.486s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'python'
+[5.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extensions ['python_setup_py']
+[5.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws) by extension 'python_setup_py'
+[5.487s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/build) by extension 'ignore'
+[5.499s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/build) ignored
+[5.502s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[5.502s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/install) by extension 'ignore'
+[5.502s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/install) ignored
+[5.510s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[5.510s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/log) by extension 'ignore'
+[5.510s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/log) ignored
+[5.511s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[5.511s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'ignore'
+[5.511s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'ignore_ament_install'
+[5.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extensions ['colcon_pkg']
+[5.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'colcon_pkg'
+[5.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extensions ['colcon_meta']
+[5.519s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'colcon_meta'
+[5.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extensions ['ros']
+[5.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'ros'
+[5.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extensions ['cmake', 'python']
+[5.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'cmake'
+[5.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'python'
+[5.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extensions ['python_setup_py']
+[5.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src) by extension 'python_setup_py'
+[5.526s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[5.526s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extension 'ignore'
+[5.526s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extension 'ignore_ament_install'
+[5.526s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extensions ['colcon_pkg']
+[5.527s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extension 'colcon_pkg'
+[5.527s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extensions ['colcon_meta']
+[5.527s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extension 'colcon_meta'
+[5.529s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extensions ['ros']
+[5.529s] Level 1:colcon.colcon_core.package_identification:_identify(/home/parsa/ros2_urdf_ws/src/my_robot_description) by extension 'ros'
+[5.571s] DEBUG:colcon.colcon_core.package_identification:Package '/home/parsa/ros2_urdf_ws/src/my_robot_description' with type 'ros.ament_cmake' and name 'my_robot_description'
+[5.572s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

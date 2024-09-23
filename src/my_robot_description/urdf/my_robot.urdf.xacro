@@ -1,0 +1,427 @@
+<?xml version="1.0"?>
+<robot name="my_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+  <link name="base_link">
+    <visual>
+      
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//Body.dae" scale="0.01 0.01 0.01"/>
+        
+      </geometry>
+      <origin xyz="1.9 -1.56 0" rpy="0.0 0.0 1.578"/>
+    
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//Body.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="1.9 -1.56 0" rpy="0.0 0.0 1.578"/>
+    </collision>
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="355.595"/>
+      <inertia ixx="103.949" ixy="-0.076" ixz="0.009" iyy="55.963" iyz="0.06" izz="157.148"/>
+    </inertial>
+    
+
+  </link>
+
+
+
+
+
+  <link name="torso_joint_f_1">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_f.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.935 -0.93 -0.895" rpy="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_f.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.935 -0.93 -0.895" rpy="0 0 0"/>
+    </collision>
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.035"/>
+      <inertia ixx="1.208" ixy="0.047" ixz="-0.00006331" iyy="1.229" iyz="-0.013" izz="0.0886"/>
+    </inertial>
+    
+
+  
+
+  </link>
+  <joint name="base_torso_f_1" type="revolute">
+    <parent link="base_link" />
+    <child link="torso_joint_f_1" />
+    <origin xyz="0.435 -0.648 0.894" rpy="0.0 0.0 ${-pi}"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+  <link name="torso_joint_f_2">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_f.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.935 -0.93 -0.895" rpy="0 0 0"/>
+    </visual>
+    <collision>
+          <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_f.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.935 -0.93 -0.895" rpy="0 0 0"/>
+    </collision>
+
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.035"/>
+      <inertia ixx="1.208" ixy="0.047" ixz="-0.00006331" iyy="1.229" iyz="-0.013" izz="0.0886"/>
+    </inertial>
+    
+  
+
+  </link>
+  <joint name="base_torso_f_2" type="revolute">
+    <parent link="base_link" />
+    <child link="torso_joint_f_2" />
+    <origin xyz="-0.428 -0.658 0.894" rpy="0.0 0.0 ${-pi}"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+  <link name="torso_joint_b_1">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_b.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-1.43 -0.93 -0.895" rpy="0 0 0"/>
+    </visual>
+    <collision>
+        <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_b.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-1.43 -0.93 -0.895" rpy="0 0 0"/> 
+    </collision>
+
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.037"/>
+      <inertia ixx="1.208" ixy="-0.047" ixz="0.000064946" iyy="1.229" iyz="-0.013" izz="0.886"/>
+    </inertial>
+    
+  
+
+  </link>
+  <joint name="base_torso_b_1" type="revolute">
+    <parent link="base_link" />
+    <child link="torso_joint_b_1" />
+    <origin xyz="-0.425 0.53 0.894" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+
+  <link name="torso_joint_b_2">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_b.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-1.43 -0.93 -0.895" rpy="0 0 0"/>
+    </visual>
+
+      <collision>
+        <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//torso_joint_b.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-1.43 -0.93 -0.895" rpy="0 0 0"/> 
+    </collision>
+
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.037"/>
+      <inertia ixx="1.208" ixy="-0.047" ixz="0.000064946" iyy="1.229" iyz="-0.013" izz="0.886"/>
+    </inertial>
+  
+
+  </link>
+  <joint name="base_torso_b_2" type="revolute">
+    <parent link="base_link" />
+    <child link="torso_joint_b_2" />
+    <origin xyz="0.437 0.53 0.894" rpy="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+  <link name="femur_1">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.77 -1.14 -0.8" rpy="0 0 0"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.77 -1.14 -0.8" rpy="0 0 0"/>
+      </collision>
+
+      <inertial>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <mass value="36.489"/>
+        <inertia ixx="0.505" ixy="0.001" ixz="-0.00002508" iyy="0.975" iyz="0.000009703" izz="1.381"/>
+      </inertial>
+      
+  </link>
+  <joint name="torso_f_1_femur_1" type="revolute">
+    <parent link="torso_joint_f_1" />
+    <child link="femur_1" />
+    <origin xyz="-0.197 0.229 -0.043" rpy="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+  <link name="femur_2">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.73 -1.17 -0.8" rpy="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.73 -1.17 -0.8" rpy="0 0 0"/>
+      
+    </collision>
+      <inertial>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <mass value="36.489"/>
+        <inertia ixx="0.505" ixy="0.001" ixz="-0.00002508" iyy="0.975" iyz="0.000009703" izz="1.381"/>
+      </inertial>
+
+
+
+  </link>
+
+  <joint name="torso_f_2_femur_2" type="revolute">
+    <parent link="torso_joint_f_2" />
+    <child link="femur_2" />
+    <origin xyz="-0.187 0.231 -0.042" rpy="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+  <link name="femur_3">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.774 -1.17 -0.81" rpy="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.774 -1.17 -0.81" rpy="0 0 0"/>
+    </collision>
+      <inertial>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <mass value="36.489"/>
+        <inertia ixx="0.505" ixy="0.001" ixz="-0.00002508" iyy="0.975" iyz="0.000009703" izz="1.381"/>
+      </inertial>
+
+
+
+  </link>
+
+  <joint name="torso_b_1_femur_3" type="revolute">
+    <parent link="torso_joint_b_1" />
+    <child link="femur_3" />
+    <origin xyz="0.193 0.23 -0.078" rpy="0 ${pi} 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+  <link name="femur_4">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.774 -1.17 -0.81" rpy="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//femur.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="-0.774 -1.17 -0.81" rpy="0 0 0"/>
+    </collision>
+
+      <inertial>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <mass value="36.489"/>
+        <inertia ixx="0.505" ixy="0.001" ixz="-0.00002508" iyy="0.975" iyz="0.000009703" izz="1.381"/>
+      </inertial>
+
+
+
+
+  </link>
+
+  <joint name="torso_b_2_femur_4" type="revolute">
+    <parent link="torso_joint_b_2" />
+    <child link="femur_4" />
+    <origin xyz="0.193 0.23 -0.078" rpy="0 ${pi} 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+  <link name="foot-f-1">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-f-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="0.68 1.47 -0.75" rpy="0 0 ${pi}"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-f-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="0.68 1.47 -0.75" rpy="0 0 ${pi}"/>   
+    </collision>
+
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.042"/>
+      <inertia ixx="3.404" ixy="-0.065" ixz="-0.144" iyy="3.603" iyz="-0.008" izz="0.612"/>
+    </inertial>
+    
+
+
+  </link>
+
+  <joint name="foot-f-1_fumer-1" type="revolute">
+  <parent link="femur_1" />
+  <child link="foot-f-1" />
+    <origin xyz="-0.04 0.4 -0.02" rpy="0 0 ${pi}"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+  <link name="foot-f-2">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-f-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="0.68 1.47 -0.75" rpy="0 0 ${pi}"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-f-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="0.68 1.47 -0.75" rpy="0 0 ${pi}"/>    
+    </collision>
+
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.042"/>
+      <inertia ixx="3.404" ixy="-0.065" ixz="-0.144" iyy="3.603" iyz="-0.008" izz="0.612"/>
+    </inertial>
+
+  </link>
+
+  <joint name="foot-f-1_fumer-2" type="revolute">
+  <parent link="femur_2" />
+  <child link="foot-f-2" />
+    <origin xyz="-0.023 0.38 -0.026" rpy="0 0 ${pi}"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+  <link name="foot-b-1">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-b-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="1.45 -1.37 0.84" rpy="${-pi} 0 ${pi}"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-b-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="1.45 -1.37 0.84" rpy="${-pi} 0 ${pi}"/>    
+    </collision>
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.399"/>
+      <inertia ixx="3.355" ixy="0.016" ixz="0.131" iyy="3.642" iyz="0.037" izz="0.593"/>
+    </inertial>
+
+
+  </link>
+
+  <joint name="foot-b-1_fumer-3" type="revolute">
+  <parent link="femur_3" />
+  <child link="foot-b-1" />
+    <origin xyz="-0.023 0.38 -0.026" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+  <link name="foot-b-2">
+    <visual>  
+      <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-b-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="1.45 -1.37 0.84" rpy="${-pi} 0 ${pi}"/>
+    </visual>
+    <collision>
+        <geometry>
+        <mesh filename="file:///home/parsa/ros2_urdf_ws/src/my_robot_description/meshes//foot-b-1.dae" scale="0.01 0.01 0.01"/>
+      </geometry>
+      <origin xyz="1.45 -1.37 0.84" rpy="${-pi} 0 ${pi}"/>  
+    </collision>
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="87.399"/>
+      <inertia ixx="3.355" ixy="0.016" ixz="0.131" iyy="3.642" iyz="0.037" izz="0.593"/>
+    </inertial>
+
+
+
+  </link>
+
+  <joint name="foot-b-2_fumer-4" type="revolute">
+  <parent link="femur_4" />
+  <child link="foot-b-2" />
+    <origin xyz="-0.023 0.38 -0.026" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.57" upper="1.57" velocity="100" effort="100"/>
+  </joint>
+
+
+
+</robot>

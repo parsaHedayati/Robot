@@ -1,0 +1,34 @@
+[0.068s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parsa/ros2_urdf_ws/src/my_robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/parsa/ros2_urdf_ws/install/my_robot_bringup
+[1.715s] -- The C compiler identification is GNU 11.4.0
+[2.649s] -- The CXX compiler identification is GNU 11.4.0
+[2.719s] -- Detecting C compiler ABI info
+[3.241s] -- Detecting C compiler ABI info - done
+[3.295s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.307s] -- Detecting C compile features
+[3.327s] -- Detecting C compile features - done
+[3.362s] -- Detecting CXX compiler ABI info
+[3.877s] -- Detecting CXX compiler ABI info - done
+[3.905s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.909s] -- Detecting CXX compile features
+[3.910s] -- Detecting CXX compile features - done
+[3.965s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.385s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.563s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.882s] -- Configuring done
+[4.887s] -- Generating done
+[4.890s] -- Build files have been written to: /home/parsa/ros2_urdf_ws/build/my_robot_bringup
+[4.902s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parsa/ros2_urdf_ws/src/my_robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/parsa/ros2_urdf_ws/install/my_robot_bringup
+[4.910s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_bringup -- -j3 -l3
+[5.178s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_bringup -- -j3 -l3
+[5.395s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_bringup
+[5.531s] -- Install configuration: ""
+[5.544s] -- Execute custom install script
+[5.550s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[5.551s]   ament_cmake_symlink_install_directory() can't find
+[5.551s]   '/home/parsa/ros2_urdf_ws/src/my_robot_bringup/urdf'
+[5.551s] Call Stack (most recent call first):
+[5.551s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[5.552s]   cmake_install.cmake:46 (include)
+[5.557s] 
+[5.557s] [0m
+[5.570s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_bringup

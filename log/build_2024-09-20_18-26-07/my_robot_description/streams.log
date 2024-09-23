@@ -1,0 +1,38 @@
+[0.225s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parsa/ros2_urdf_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/parsa/ros2_urdf_ws/install/my_robot_description
+[1.762s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.367s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.944s] -- Configuring done
+[3.021s] -- Generating done
+[3.024s] -- Build files have been written to: /home/parsa/ros2_urdf_ws/build/my_robot_description
+[3.044s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parsa/ros2_urdf_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/parsa/ros2_urdf_ws/install/my_robot_description
+[3.048s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_description -- -j3 -l3
+[3.196s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_description -- -j3 -l3
+[3.307s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_description
+[3.328s] -- Install configuration: ""
+[3.328s] -- Execute custom install script
+[3.330s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+[3.332s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
+[3.333s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+[3.335s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//rviz/urdf.rviz
+[3.336s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//meshes/Body.dae
+[3.337s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//meshes/femur.dae
+[3.338s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//meshes/foot-b-1.dae
+[3.338s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//meshes/foot-f-1.dae
+[3.339s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//meshes/torso_joint_b.dae
+[3.339s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description//meshes/torso_joint_f.dae
+[3.339s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[3.383s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[3.383s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[3.384s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[3.384s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[3.385s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[3.386s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[3.386s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[3.387s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[3.388s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[3.388s] -- Symlinking: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[3.412s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[3.413s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[3.413s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[3.414s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.xml
+[3.418s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_description
