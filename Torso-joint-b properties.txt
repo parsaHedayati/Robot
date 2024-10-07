@@ -1,0 +1,52 @@
+
+
+Mesh torso_joint_b
+
+Body
+Area	6652.451 mm^2
+Density	0.001 g / mm^3
+Mass	14.414 g
+Volume	11087.467 mm^3
+Physical Material	Pla
+Appearance	PLA
+
+Mesh
+Facet Count	33002
+Vertex Count	16495
+Face Group Count	1
+Shell Count	3
+Texture Count	0
+Color	No
+
+Bounding Box
+	Length 	 40.087 mm
+	Width 	 37.50 mm
+	Height 	 36.009 mm
+Center of Mass	144.491 mm, -74.721 mm, 30.232 mm
+
+Moment of Inertia at Center of Mass   (g mm^2)
+	Ixx = 2.000E+07
+	Ixy = -1075.538
+	Ixz = -7.742E+05
+	Iyx = -1075.538
+	Iyy = 1.467E+07
+	Iyz = 2.077E+05
+	Izx = -7.742E+05
+	Izy = 2.077E+05
+	Izz = 2.036E+07
+
+Moment of Inertia at Origin   (g mm^2)
+	Ixx = 2.009E+07
+	Ixy = 1.545E+05
+	Ixz = -8.371E+05
+	Iyx = 1.545E+05
+	Iyy = 1.499E+07
+	Iyz = 2.403E+05
+	Izx = -8.371E+05
+	Izy = 2.403E+05
+	Izz = 2.074E+07
+
+Mesh Analysis
+Mesh is Closed	Yes
+Mesh is Oriented	Yes
+Mesh has Positive Volume	Yes

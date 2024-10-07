@@ -1,0 +1,52 @@
+
+
+Mesh femur
+
+Body
+Area	4344.357 mm^2
+Density	0.001 g / mm^3
+Mass	6.043 g
+Volume	4648.315 mm^3
+Physical Material	Pla
+Appearance	PLA
+
+Mesh
+Facet Count	1512
+Vertex Count	750
+Face Group Count	1
+Shell Count	1
+Texture Count	0
+Color	No
+
+Bounding Box
+	Length 	 40.15 mm
+	Width 	 12.00 mm
+	Height 	 49.50 mm
+Center of Mass	92.07 mm, -80.009 mm, 134.821 mm
+
+Moment of Inertia at Center of Mass   (g mm^2)
+	Ixx = 8.357E+06
+	Ixy = 415.35
+	Ixz = 10975.164
+	Iyx = 415.35
+	Iyy = 2.288E+07
+	Iyz = 160.683
+	Izx = 10975.164
+	Izy = 160.683
+	Izz = 1.615E+07
+
+Moment of Inertia at Origin   (g mm^2)
+	Ixx = 8.506E+06
+	Ixy = 44929.37
+	Ixz = -64033.938
+	Iyx = 44929.37
+	Iyy = 2.304E+07
+	Iyz = 65344.275
+	Izx = -64033.938
+	Izy = 65344.275
+	Izz = 1.624E+07
+
+Mesh Analysis
+Mesh is Closed	Yes
+Mesh is Oriented	Yes
+Mesh has Positive Volume	Yes
