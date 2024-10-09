@@ -12,34 +12,34 @@ Manage
 	Change Order
 
 Physical
-	Mass	73.505 g
-	Volume	56541.965 mm^3
+	Mass	7.350E-05 g
+	Volume	0.057 mm^3
 	Density	0.001 g / mm^3
-	Area	42617.497 mm^2
-	World X,Y,Z	446.608 mm, -31.692 mm, 16.447 mm
-	Center of Mass	45.047 mm, 22.702 mm, 23.056 mm
+	Area	4.262 mm^2
+	World X,Y,Z	242.448 mm, 171.657 mm, 85.206 mm
+	Center of Mass	212.168 mm, 215.364 mm, 111.023 mm
 	Bounding Box
-		Length	151.915 mm
-		Width	110.843 mm
-		Height	54.784 mm
+		Length	4.346 mm
+		Width	1.108 mm
+		Height	0.711 mm
 	Moment of Inertia at Center of Mass   (g mm^2)
-		Ixx	1.124E+05
-		Ixy	532.079
-		Ixz	-21.06
-		Iyx	532.079
-		Iyy	2.245E+05
-		Iyz	-320.754
-		Izx	-21.06
-		Izy	-320.754
-		Izz	3.227E+05
+		Ixx	1123.68
+		Ixy	5.32
+		Ixz	-0.211
+		Iyx	5.32
+		Iyy	2245.21
+		Iyz	-3.206
+		Izx	-0.211
+		Izy	-3.206
+		Izz	3227.064
 	Moment of Inertia at Origin   (g mm^2)
-		Ixx	1.893E+05
-		Ixy	-74636.356
-		Ixz	-76361.274
-		Iyx	-74636.356
-		Iyy	4.127E+05
-		Iyz	-38792.872
-		Izx	-76361.274
-		Izy	-38792.872
-		Izz	5.097E+05
+		Ixx	1127.995
+		Ixy	1.961
+		Ixz	-1.943
+		Iyx	1.961
+		Iyy	2249.425
+		Iyz	-4.964
+		Izx	-1.943
+		Izy	-4.964
+		Izz	3233.782
 
