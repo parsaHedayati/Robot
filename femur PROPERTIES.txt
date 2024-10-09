@@ -1,12 +1,12 @@
 
 
-Mesh femur
+Mesh FEMUR
 
 Body
-Area	4344.357 mm^2
+Area	0.434 mm^2
 Density	0.001 g / mm^3
-Mass	6.043 g
-Volume	4648.315 mm^3
+Mass	6.043E-06 g
+Volume	0.005 mm^3
 Physical Material	Pla
 Appearance	PLA
 
@@ -19,32 +19,32 @@ Texture Count	0
 Color	No
 
 Bounding Box
-	Length 	 40.15 mm
-	Width 	 12.00 mm
-	Height 	 49.50 mm
-Center of Mass	92.07 mm, -80.009 mm, 134.821 mm
+	Length 	 0.402 mm
+	Width 	 0.495 mm
+	Height 	 0.12 mm
+Center of Mass	0.001 mm, -0.005 mm, 24.75 mm
 
 Moment of Inertia at Center of Mass   (g mm^2)
-	Ixx = 8.357E+06
-	Ixy = 415.35
-	Ixz = 10975.164
-	Iyx = 415.35
-	Iyy = 2.288E+07
-	Iyz = 160.683
-	Izx = 10975.164
-	Izy = 160.683
-	Izz = 1.615E+07
+	Ixx = 83571.135
+	Ixy = 109.752
+	Ixz = -4.153
+	Iyx = 109.752
+	Iyy = 1.607
+	Iyz = -2.288E+05
+	Izx = -4.153
+	Izy = -2.288E+05
+	Izz = -1.607
 
 Moment of Inertia at Origin   (g mm^2)
-	Ixx = 8.506E+06
-	Ixy = 44929.37
-	Ixz = -64033.938
-	Iyx = 44929.37
-	Iyy = 2.304E+07
-	Iyz = 65344.275
-	Izx = -64033.938
-	Izy = 65344.275
-	Izz = 1.624E+07
+	Ixx = 83571.139
+	Ixy = 109.752
+	Ixz = -4.153
+	Iyx = 109.752
+	Iyy = 1.611
+	Iyz = -2.288E+05
+	Izx = -4.153
+	Izy = -2.288E+05
+	Izz = -1.607
 
 Mesh Analysis
 Mesh is Closed	Yes
