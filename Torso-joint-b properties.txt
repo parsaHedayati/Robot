@@ -3,10 +3,10 @@
 Mesh torso_joint_b
 
 Body
-Area	6652.451 mm^2
+Area	0.665 mm^2
 Density	0.001 g / mm^3
-Mass	14.414 g
-Volume	11087.467 mm^3
+Mass	1.441E-05 g
+Volume	0.011 mm^3
 Physical Material	Pla
 Appearance	PLA
 
@@ -19,32 +19,32 @@ Texture Count	0
 Color	No
 
 Bounding Box
-	Length 	 40.087 mm
-	Width 	 37.50 mm
-	Height 	 36.009 mm
-Center of Mass	144.491 mm, -74.721 mm, 30.232 mm
+	Length 	 0.401 mm
+	Width 	 0.375 mm
+	Height 	 0.36 mm
+Center of Mass	145.579 mm, -73.02 mm, 22.241 mm
 
 Moment of Inertia at Center of Mass   (g mm^2)
-	Ixx = 2.000E+07
-	Ixy = -1075.538
-	Ixz = -7.742E+05
-	Iyx = -1075.538
-	Iyy = 1.467E+07
-	Iyz = 2.077E+05
-	Izx = -7.742E+05
-	Izy = 2.077E+05
-	Izz = 2.036E+07
+	Ixx = 2.000E+05
+	Ixy = -10.754
+	Ixz = -7741.708
+	Iyx = -10.754
+	Iyy = 1.467E+05
+	Iyz = 2077.359
+	Izx = -7741.708
+	Izy = 2077.359
+	Izz = 2.036E+05
 
 Moment of Inertia at Origin   (g mm^2)
-	Ixx = 2.009E+07
-	Ixy = 1.545E+05
-	Ixz = -8.371E+05
-	Iyx = 1.545E+05
-	Iyy = 1.499E+07
-	Iyz = 2.403E+05
-	Izx = -8.371E+05
-	Izy = 2.403E+05
-	Izz = 2.074E+07
+	Ixx = 2.000E+05
+	Ixy = -10.601
+	Ixz = -7741.754
+	Iyx = -10.601
+	Iyy = 1.467E+05
+	Iyz = 2077.382
+	Izx = -7741.754
+	Izy = 2077.382
+	Izz = 2.036E+05
 
 Mesh Analysis
 Mesh is Closed	Yes
