@@ -1,0 +1,255 @@
+<robot name="spidi">
+
+	<!-- * * * Link Definitions * * * -->
+
+ 	<link name="base_link">
+		<visual>
+		    <origin xyz="0 0 0.0425" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.4346 0.1108 0.0711"/>
+			</geometry>
+			<material name="Cyan1">
+	       		<color rgba="0 0.9 0.9 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+<link name="torso_joint_f_link">
+<visual>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+  
+    <geometry>
+      <box size="0.0401  0.0375 0.036"/>
+    
+  </geometry>
+  <material name="black">
+	       		<color rgba="0 0 0"/>
+	     	</material>
+</visual> 
+</link>
+
+<joint name="base_link-torso_joint_f-1" type="revolute">
+  <origin xyz="0.2173 0.07 0.035" rpy="0.0 0.0 0.0"/>
+  <parent link="base_link"/>
+  <child link="torso_joint_f_link"/>
+  <axis xyz=" 0 1 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+</joint>
+<link name="femur1">
+<visual>
+		    <origin xyz="0 0.04 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.0402 0.0495 0.012"/>
+			</geometry>
+			<material name="red">
+	       		<color rgba="1 0 0"/>
+	     	</material>
+		</visual>	
+  
+</link>
+ <joint name="torso_joint_f_link-femur" type="revolute">
+  <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="torso_joint_f_link"/>
+  <child link="femur1"/>
+  <axis xyz="1 0 0"/>
+   <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+
+
+ <link name="foot-f1">
+  <visual>
+  <origin xyz="0 0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.0343 0.029 0.1002"/>
+    </geometry>
+  </visual>
+ </link>
+ <joint name="femur1-foor-f1" type="revolute">
+  <origin xyz="0.0 0.051 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="femur1"/>
+  <child link="foot-f1"/>
+  <axis xyz="1 0.0 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+
+
+<link name="torso_joint_f_link2">
+<visual>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+  
+    <geometry>
+      <box size="0.0401  0.0375 0.036"/>
+    
+  </geometry>
+  <material name="black">
+	       		<color rgba="0 0 0"/>
+	     	</material>
+</visual> 
+</link>
+
+<joint name="base_link-torso_joint_f-1" type="revolute">
+  <origin xyz="0.2173 -0.07 0.035" rpy="0.0 0.0 0.0"/>
+  <parent link="base_link"/>
+  <child link="torso_joint_f_link2"/>
+  <axis xyz=" 0 1 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+</joint>
+
+<link name="femur2">
+<visual>
+		    <origin xyz="0 -0.04 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.0402 0.0495 0.012"/>
+			</geometry>
+			<material name="red">
+	       		<color rgba="1 0 0"/>
+	     	</material>
+		</visual>	
+  
+</link>
+ <joint name="torso_joint_f_link2-femur2" type="revolute">
+  <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="torso_joint_f_link2"/>
+  <child link="femur2"/>
+  <axis xyz="1 0 0"/>
+   <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+
+  <link name="foot-f2">
+  <visual>
+  <origin xyz="0 0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.0343 0.029 0.1002"/>
+    </geometry>
+  </visual>
+ </link>
+ <joint name="femur2-foor-f2" type="revolute">
+  <origin xyz="0.0 -0.051 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="femur2"/>
+  <child link="foot-f2"/>
+  <axis xyz="1 0.0 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+
+<link name="torso_joint_b_link">
+<visual>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+  
+    <geometry>
+      <box size="0.0401  0.0375 0.036"/>
+    
+  </geometry>
+  <material name="black">
+	       		<color rgba="0 0 0"/>
+	     	</material>
+</visual> 
+</link>
+
+<joint name="base_link-torso_joint_b-1" type="revolute">
+  <origin xyz="-0.2173 0.07 0.035" rpy="0.0 0.0 0.0"/>
+  <parent link="base_link"/>
+  <child link="torso_joint_b_link"/>
+  <axis xyz=" 0 1 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+</joint>
+<link name="femur3">
+<visual>
+		    <origin xyz="0 0.04 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.0402 0.0495 0.012"/>
+			</geometry>
+			<material name="red">
+	       		<color rgba="1 0 0"/>
+	     	</material>
+		</visual>	
+  
+</link>
+ <joint name="torso_joint_b_link-femur3" type="revolute">
+  <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="torso_joint_b_link"/>
+  <child link="femur3"/>
+  <axis xyz="1 0 0"/>
+   <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+ <link name="foot-b1">
+  <visual>
+  <origin xyz="0 0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <geometry>
+        <geometry>
+          <cylinder radius="0.06" length="0.04"/>
+        </geometry>
+      </geometry>
+    </geometry>
+  </visual>
+ </link>
+ <joint name="femur3-foor-b1" type="revolute">
+  <origin xyz="0.0 0.051 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="femur3"/>
+  <child link="foot-b1"/>
+  <axis xyz="1 0.0 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+
+<link name="torso_joint_b_link2">
+<visual>
+<origin xyz="0 0 0" rpy="0 0 0"/>
+  
+    <geometry>
+      <box size="0.0401  0.0375 0.036"/>
+    
+  </geometry>
+  <material name="black">
+	       		<color rgba="0 0 0"/>
+	     	</material>
+</visual> 
+</link>
+
+<joint name="base_link-torso_joint_b-1" type="revolute">
+  <origin xyz="-0.2173 -0.07 0.035" rpy="0.0 0.0 0.0"/>
+  <parent link="base_link"/>
+  <child link="torso_joint_b_link2"/>
+  <axis xyz=" 0 1 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+</joint>
+
+<link name="femur4">
+<visual>
+		    <origin xyz="0 -0.04 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.0402 0.0495 0.012"/>
+			</geometry>
+			<material name="red">
+	       		<color rgba="1 0 0"/>
+	     	</material>
+		</visual>	
+  
+</link>
+ <joint name="torso_joint_b_link2-femur4" type="revolute">
+  <origin xyz="0.0 0 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="torso_joint_b_link2"/>
+  <child link="femur4"/>
+  <axis xyz="1 0 0"/>
+   <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+
+  <link name="foot-b2">
+  <visual>
+  <origin xyz="0 0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <box size="0.0343 0.029 0.1002"/>
+    </geometry>
+  </visual>
+ </link>
+ <joint name="femur4-foor-b2" type="revolute">
+  <origin xyz="0.0 -0.051 0.0" rpy="0.0 0.0 0.0"/>
+  <parent link="femur4"/>
+  <child link="foot-b2"/>
+  <axis xyz="1 0.0 0"/>
+  <limit lower="-3.14" upper="3.14" effort="10" velocity="10"/>
+ </joint>
+ 
+
+
+
+</robot>
