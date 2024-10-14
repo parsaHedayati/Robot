@@ -1,51 +1,65 @@
 import math
 
 class LegKinematics:
-    def __init__(self, torso_length, femur_length, foot_length):
-        self.torso_length = torso_length
-        self.femur_length = femur_length
-        self.foot_length = foot_length
+    def __init__(self, torso_length, femur_length, foot_length, offsets):
+        self.torso_length = torso_length  # L1
+        self.femur_length = femur_length  # L2
+        self.foot_length = foot_length    # L3
+        self.offsets = offsets  # Offsets for each leg: {FL, FR, BL, BR}
 
     def calculate_angles(self, x, y, z):
-        # Step 1: Calculate planar distance from the hip to the target (in y-z plane)
-        c = math.sqrt(z**2 + y**2)
+        results = {}
+        for leg, (offset_x, offset_y) in self.offsets.items():
+            # Apply coordinate offsets for each leg
+            x_adj = x - offset_x
+            y_adj = y - offset_y
 
-        # Step 2: Distance from torso to target considering hip offset
-        d = math.sqrt(c**2 + self.torso_length**2)
+            # Step 1: Planar distance from the hip to the target (y-z plane)
+            c = math.sqrt(z**2 + y_adj**2)
 
-        # Step 3: Calculate hip angles
-        alpha = math.degrees(math.atan2(z, y))  # Hip rotation in the y-z plane
-        beta = math.degrees(math.atan2(c, self.torso_length))  # Hip tilt in x-z plane
-        hip_angle = alpha + beta  # Total hip joint angle
+            # Step 2: 3D distance from torso to target position
+            d = math.sqrt(c**2 + self.torso_length**2)
 
-        # Step 4: Calculate distance from hip joint to the foot target (3D distance)
-        g = math.sqrt(d**2 + x**2)
+            # Step 3: Hip angle (side-to-side rotation)
+            hip_angle = math.degrees(math.atan2(z, y_adj))
 
-        # Step 5: Calculate the foot joint angle using the law of cosines
-        cos_angle = (g**2 - self.femur_length**2 - self.foot_length**2) / (-2 * self.femur_length * self.foot_length)
+            # Step 4: 3D distance from hip joint to the target foot position
+            g = math.sqrt(d**2 + x_adj**2)
 
-        # Clamp the value to avoid math domain errors
-        cos_angle = min(1, max(-1, cos_angle))  # Ensures cos_angle is between -1 and 1
-        foot_angle = math.degrees(math.acos(cos_angle))
+            # Step 5: Foot angle using the law of cosines
+            cos_foot_angle = (self.femur_length**2 + self.foot_length**2 - g**2) / (2 * self.femur_length * self.foot_length)
+            cos_foot_angle = min(1, max(-1, cos_foot_angle))  # Clamp to avoid errors
+            foot_angle = math.degrees(math.acos(cos_foot_angle))
 
-        # Step 6: Calculate femur angle components
-        alpha_1 = math.degrees(math.atan2(x, d))  # Angle in x-z plane
-        beta_1 = math.degrees(math.asin((self.foot_length * math.sin(math.radians(foot_angle))) / g))
+            # Step 6: Femur angle using the law of cosines
+            cos_femur_angle = (self.femur_length**2 + g**2 - self.foot_length**2) / (2 * self.femur_length * g)
+            cos_femur_angle = min(1, max(-1, cos_femur_angle))
+            femur_angle = math.degrees(math.acos(cos_femur_angle))
 
-        # Total femur angle
-        femur_angle = alpha_1 + beta_1
+            # Adjust femur angle by adding the angle in the x-z plane
+            alpha_1 = math.degrees(math.atan2(x_adj, d))
+            femur_angle += alpha_1
 
-        return hip_angle, femur_angle, foot_angle
+            results[leg] = (hip_angle, femur_angle, foot_angle)
+
+        return results
 
 def main():
-    # Link lengths (torso to hip, femur, and foot)
-    torso_length = 40.1  # Distance between torso and hip joint (L1)
-    femur_length = 49.5  # Length of the femur link (L2)
-    foot_length = 100.2  # Length of the foot link (L3)
+    # Link lengths (L1, L2, L3)
+    torso_length = 30.6
+    femur_length = 49.5
+    foot_length = 100.2
 
-    kinematics = LegKinematics(torso_length, femur_length, foot_length)
+    # Offsets for each leg relative to the body frame
+    offsets = {
+        "FL": (6, 4.35),  # Front-left leg
+        "FR": (6, -4.35),  # Front-right leg
+        "BL": (-6, 4.35),  # Back-left leg
+        "BR": (-6, -4.35)  # Back-right leg
+    }
 
-    # Inputs: Target position for the foot in 3D space (x, y, z)
+    kinematics = LegKinematics(torso_length, femur_length, foot_length, offsets)
+
     try:
         x = float(input("Enter x: "))
         y = float(input("Enter y: "))
@@ -54,12 +68,18 @@ def main():
         print("Invalid input. Please enter numeric values.")
         return
 
-    hip_angle, femur_angle, foot_angle = kinematics.calculate_angles(x, y, z)
+    try:
+        results = kinematics.calculate_angles(x, y, z)
+        
+        # Print calculated joint angles for all legs
+        for leg, angles in results.items():
+            print(f"\n{leg} Leg:")
+            print(f"  Hip angle: {angles[0]:.2f} degrees")
+            print(f"  Femur angle: {angles[1]:.2f} degrees")
+            print(f"  Foot angle: {angles[2]:.2f} degrees")
 
-    # Print calculated joint angles
-    print(f"Hip angle: {hip_angle:.2f} degrees")
-    print(f"Femur angle: {femur_angle:.2f} degrees")
-    print(f"Foot angle: {foot_angle:.2f} degrees")
+    except ValueError as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
