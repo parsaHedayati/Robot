@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 class LegKinematics:
     def __init__(self, torso_length, femur_length, foot_length, offsets):
@@ -7,21 +8,42 @@ class LegKinematics:
         self.foot_length = foot_length    # L3
         self.offsets = offsets  # Offsets for each leg: {FL, FR, BL, BR}
 
-    def calculate_angles(self, x, y, z):
+    def rotation_matrix(self, roll, pitch, yaw):
+        """Create a rotation matrix from roll, pitch, yaw angles (in radians)."""
+        Rx = np.array([[1, 0, 0],
+                       [0, np.cos(roll), -np.sin(roll)],
+                       [0, np.sin(roll), np.cos(roll)]])
+        
+        Ry = np.array([[np.cos(pitch), 0, np.sin(pitch)],
+                       [0, 1, 0],
+                       [-np.sin(pitch), 0, np.cos(pitch)]])
+        
+        Rz = np.array([[np.cos(yaw), -np.sin(yaw), 0],
+                       [np.sin(yaw), np.cos(yaw), 0],
+                       [0, 0, 1]])
+        
+        return np.dot(Rz, np.dot(Ry, Rx))
+
+    def calculate_angles(self, x, y, z, roll, pitch, yaw):
         results = {}
+        R = self.rotation_matrix(roll, pitch, yaw)
+        
         for leg, (offset_x, offset_y) in self.offsets.items():
-            # Apply coordinate offsets for each leg
-            x_adj = x - offset_x
-            y_adj = y - offset_y
+            # Apply body rotation to leg offset
+            rotated_offset = np.dot(R, np.array([offset_x, offset_y, 0]))
+            
+            # Apply coordinate offsets and body rotation for each leg
+            leg_pos = np.dot(R, np.array([x, y, z])) - rotated_offset
+            x_adj, y_adj, z_adj = leg_pos
 
             # Step 1: Planar distance from the hip to the target (y-z plane)
-            c = math.sqrt(z**2 + y_adj**2)
+            c = math.sqrt(z_adj**2 + y_adj**2)
 
             # Step 2: 3D distance from torso to target position
             d = math.sqrt(c**2 + self.torso_length**2)
 
             # Step 3: Hip angle (side-to-side rotation)
-            hip_angle = math.degrees(math.atan2(z, y_adj))
+            hip_angle = math.degrees(math.atan2(z_adj, y_adj))
 
             # Step 4: 3D distance from hip joint to the target foot position
             g = math.sqrt(d**2 + x_adj**2)
@@ -64,12 +86,15 @@ def main():
         x = float(input("Enter x: "))
         y = float(input("Enter y: "))
         z = float(input("Enter z: "))
+        roll = math.radians(float(input("Enter roll (degrees): ")))
+        pitch = math.radians(float(input("Enter pitch (degrees): ")))
+        yaw = math.radians(float(input("Enter yaw (degrees): ")))
     except ValueError:
         print("Invalid input. Please enter numeric values.")
         return
 
     try:
-        results = kinematics.calculate_angles(x, y, z)
+        results = kinematics.calculate_angles(x, y, z, roll, pitch, yaw)
         
         # Print calculated joint angles for all legs
         for leg, angles in results.items():
