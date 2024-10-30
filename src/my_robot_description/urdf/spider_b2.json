@@ -1,0 +1,25 @@
+{
+  "elements": [
+    "base_link",
+    "base_torso_b_2",
+    "torso_joint_b_2",
+    "torso_b_2_femur_4",
+    "femur_4",
+    "foot-b-2_femur-4"
+  ],
+  "urdf_file": "my_robot.urdf.xacro",
+  "active_links_mask": [
+    false,
+    true,
+    true,
+    true,
+    false
+  ],
+  "last_link_vector": [
+    0,
+    0,
+    0
+  ],
+  "name": "spider_b2",
+  "version": "v1"
+}

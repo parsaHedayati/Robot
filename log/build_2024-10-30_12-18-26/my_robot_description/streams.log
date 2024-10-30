@@ -1,0 +1,6 @@
+[0.219s] Invoking command in '/home/parsa/ros2_quadro_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_quadro_ws/build/my_robot_description -- -j3 -l3
+[0.755s] [0mCMake Error: The current CMakeCache.txt directory /home/parsa/ros2_quadro_ws/build/my_robot_description/CMakeCache.txt is different than the directory /home/parsa/ros2_urdf_ws/build/my_robot_description where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[1.011s] [0mCMake Error: The source directory "/home/parsa/ros2_urdf_ws/src/my_robot_description" does not exist.
+[1.012s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.067s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.069s] Invoked command in '/home/parsa/ros2_quadro_ws/build/my_robot_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_quadro_ws/build/my_robot_description -- -j3 -l3

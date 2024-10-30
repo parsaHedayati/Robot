@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: inverse-kinematics
+Version: 0.0.1
+Summary: Leg kinematics ROS 2 node for quadruped robot
+Home-page: UNKNOWN
+Maintainer: parsa hedayati
+Maintainer-email: parsahd95@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

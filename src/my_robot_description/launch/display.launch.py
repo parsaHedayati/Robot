@@ -36,3 +36,5 @@ def generate_launch_description():
          ,rviz2_node
         ]
     )
+
+

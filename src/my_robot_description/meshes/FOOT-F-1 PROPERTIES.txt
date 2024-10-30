@@ -1,0 +1,52 @@
+
+
+Mesh foot-f-1
+
+Body
+Area	6423.342 mm^2
+Density	0.001 g / mm^3
+Mass	14.414 g
+Volume	11088.07 mm^3
+Physical Material	Pla
+Appearance	PLA
+
+Mesh
+Facet Count	33358
+Vertex Count	16671
+Face Group Count	1
+Shell Count	1
+Texture Count	0
+Color	No
+
+Bounding Box
+	Length 	 34.302 mm
+	Width 	 28.986 mm
+	Height 	 100.24 mm
+Center of Mass	87.183 mm, -53.13 mm, 64.978 mm
+
+Moment of Inertia at Center of Mass   (g mm^2)
+	Ixx = 5.637E+07
+	Ixy = -1.069E+06
+	Ixz = -1.885E+06
+	Iyx = -1.069E+06
+	Iyy = 1.298E+05
+	Iyz = -1.014E+07
+	Izx = -1.885E+06
+	Izy = -1.014E+07
+	Izz = -1.298E+05
+
+Moment of Inertia at Origin   (g mm^2)
+	Ixx = 5.647E+07
+	Ixy = -1.003E+06
+	Ixz = -1.967E+06
+	Iyx = -1.003E+06
+	Iyy = 3.002E+05
+	Iyz = -1.009E+07
+	Izx = -1.967E+06
+	Izy = -1.009E+07
+	Izz = 20479.447
+
+Mesh Analysis
+Mesh is Closed	Yes
+Mesh is Oriented	Yes
+Mesh has Positive Volume	Yes

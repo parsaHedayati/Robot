@@ -1,0 +1,11 @@
+[1.327s] Invoking command in '/home/parsa/ros2_urdf_ws/src/Inverse_kinematics': PYTHONPATH=/home/parsa/ros2_urdf_ws/build/Inverse_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parsa/ros2_urdf_ws/install/Inverse_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Inverse_kinematics build --build-base /home/parsa/ros2_urdf_ws/build/Inverse_kinematics/build install --record /home/parsa/ros2_urdf_ws/build/Inverse_kinematics/install.log --single-version-externally-managed
+[2.467s] running egg_info
+[2.470s] creating ../../build/Inverse_kinematics/Inverse_Kinematics.egg-info
+[2.471s] writing ../../build/Inverse_kinematics/Inverse_Kinematics.egg-info/PKG-INFO
+[2.472s] writing dependency_links to ../../build/Inverse_kinematics/Inverse_Kinematics.egg-info/dependency_links.txt
+[2.473s] writing entry points to ../../build/Inverse_kinematics/Inverse_Kinematics.egg-info/entry_points.txt
+[2.473s] writing requirements to ../../build/Inverse_kinematics/Inverse_Kinematics.egg-info/requires.txt
+[2.473s] writing top-level names to ../../build/Inverse_kinematics/Inverse_Kinematics.egg-info/top_level.txt
+[2.474s] writing manifest file '../../build/Inverse_kinematics/Inverse_Kinematics.egg-info/SOURCES.txt'
+[2.478s] error: package directory 'Inverse_Kinematics' does not exist
+[2.548s] Invoked command in '/home/parsa/ros2_urdf_ws/src/Inverse_kinematics' returned '1': PYTHONPATH=/home/parsa/ros2_urdf_ws/build/Inverse_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parsa/ros2_urdf_ws/install/Inverse_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/Inverse_kinematics build --build-base /home/parsa/ros2_urdf_ws/build/Inverse_kinematics/build install --record /home/parsa/ros2_urdf_ws/build/Inverse_kinematics/install.log --single-version-externally-managed

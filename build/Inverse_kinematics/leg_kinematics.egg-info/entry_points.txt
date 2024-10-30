@@ -1,0 +1,3 @@
+[console_scripts]
+leg_kinematics_node = leg_kinematics.leg_kinematics_node:main
+

@@ -1,0 +1,21 @@
+[2.048s] Invoking command in '/home/parsa/ros2_urdf_ws/src/inverse_kinematics': PYTHONPATH=/home/parsa/ros2_urdf_ws/build/inverse_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/inverse_kinematics build --build-base /home/parsa/ros2_urdf_ws/build/inverse_kinematics/build install --record /home/parsa/ros2_urdf_ws/build/inverse_kinematics/install.log --single-version-externally-managed
+[3.055s] running egg_info
+[3.056s] writing ../../build/inverse_kinematics/inverse_kinematics.egg-info/PKG-INFO
+[3.058s] writing dependency_links to ../../build/inverse_kinematics/inverse_kinematics.egg-info/dependency_links.txt
+[3.058s] writing entry points to ../../build/inverse_kinematics/inverse_kinematics.egg-info/entry_points.txt
+[3.058s] writing requirements to ../../build/inverse_kinematics/inverse_kinematics.egg-info/requires.txt
+[3.058s] writing top-level names to ../../build/inverse_kinematics/inverse_kinematics.egg-info/top_level.txt
+[3.062s] reading manifest file '../../build/inverse_kinematics/inverse_kinematics.egg-info/SOURCES.txt'
+[3.062s] adding license file 'LICENSE'
+[3.064s] writing manifest file '../../build/inverse_kinematics/inverse_kinematics.egg-info/SOURCES.txt'
+[3.064s] running build
+[3.064s] running build_py
+[3.065s] running install
+[3.065s] running install_lib
+[3.067s] running install_egg_info
+[3.073s] removing '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages/inverse_kinematics-0.0.1-py3.10.egg-info' (and everything under it)
+[3.073s] Copying ../../build/inverse_kinematics/inverse_kinematics.egg-info to /home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages/inverse_kinematics-0.0.1-py3.10.egg-info
+[3.073s] running install_scripts
+[3.118s] Installing inverse_kinematics_node script to /home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/inverse_kinematics
+[3.119s] writing list of installed files to '/home/parsa/ros2_urdf_ws/build/inverse_kinematics/install.log'
+[3.164s] Invoked command in '/home/parsa/ros2_urdf_ws/src/inverse_kinematics' returned '0': PYTHONPATH=/home/parsa/ros2_urdf_ws/build/inverse_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/inverse_kinematics build --build-base /home/parsa/ros2_urdf_ws/build/inverse_kinematics/build install --record /home/parsa/ros2_urdf_ws/build/inverse_kinematics/install.log --single-version-externally-managed

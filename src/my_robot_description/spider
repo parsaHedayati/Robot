@@ -1,0 +1,51 @@
+digraph robot {
+	link_base_link [label=base_link color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_base_torso_f_1 [label=base_torso_f_1 color=green fillcolor=lightgrey style=filled]
+	link_base_link -> joint_base_torso_f_1
+	link_torso_joint_f_1 [label=torso_joint_f_1 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_base_torso_f_1 -> link_torso_joint_f_1
+	joint_torso_f_1_femur_1 [label=torso_f_1_femur_1 color=green fillcolor=lightgrey style=filled]
+	link_torso_joint_f_1 -> joint_torso_f_1_femur_1
+	link_femur_1 [label=femur_1 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_torso_f_1_femur_1 -> link_femur_1
+	"joint_foot-f-1_femur-1" [label="foot-f-1_femur-1" color=green fillcolor=lightgrey style=filled]
+	link_femur_1 -> "joint_foot-f-1_femur-1"
+	"link_foot-f-1" [label="foot-f-1" color=blue fillcolor=lightgrey shape=box style=filled]
+	"joint_foot-f-1_femur-1" -> "link_foot-f-1"
+	joint_base_torso_f_2 [label=base_torso_f_2 color=green fillcolor=lightgrey style=filled]
+	link_base_link -> joint_base_torso_f_2
+	link_torso_joint_f_2 [label=torso_joint_f_2 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_base_torso_f_2 -> link_torso_joint_f_2
+	joint_torso_f_2_femur_2 [label=torso_f_2_femur_2 color=green fillcolor=lightgrey style=filled]
+	link_torso_joint_f_2 -> joint_torso_f_2_femur_2
+	link_femur_2 [label=femur_2 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_torso_f_2_femur_2 -> link_femur_2
+	"joint_foot-f-2_femur-2" [label="foot-f-2_femur-2" color=green fillcolor=lightgrey style=filled]
+	link_femur_2 -> "joint_foot-f-2_femur-2"
+	"link_foot-f-2" [label="foot-f-2" color=blue fillcolor=lightgrey shape=box style=filled]
+	"joint_foot-f-2_femur-2" -> "link_foot-f-2"
+	joint_base_torso_b_1 [label=base_torso_b_1 color=green fillcolor=lightgrey style=filled]
+	link_base_link -> joint_base_torso_b_1
+	link_torso_joint_b_1 [label=torso_joint_b_1 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_base_torso_b_1 -> link_torso_joint_b_1
+	joint_torso_b_1_femur_3 [label=torso_b_1_femur_3 color=green fillcolor=lightgrey style=filled]
+	link_torso_joint_b_1 -> joint_torso_b_1_femur_3
+	link_femur_3 [label=femur_3 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_torso_b_1_femur_3 -> link_femur_3
+	"joint_foot-b-1_femur-3" [label="foot-b-1_femur-3" color=green fillcolor=lightgrey style=filled]
+	link_femur_3 -> "joint_foot-b-1_femur-3"
+	"link_foot-b-1" [label="foot-b-1" color=blue fillcolor=lightgrey shape=box style=filled]
+	"joint_foot-b-1_femur-3" -> "link_foot-b-1"
+	joint_base_torso_b_2 [label=base_torso_b_2 color=green fillcolor=lightgrey style=filled]
+	link_base_link -> joint_base_torso_b_2
+	link_torso_joint_b_2 [label=torso_joint_b_2 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_base_torso_b_2 -> link_torso_joint_b_2
+	joint_torso_b_2_femur_4 [label=torso_b_2_femur_4 color=green fillcolor=lightgrey style=filled]
+	link_torso_joint_b_2 -> joint_torso_b_2_femur_4
+	link_femur_4 [label=femur_4 color=blue fillcolor=lightgrey shape=box style=filled]
+	joint_torso_b_2_femur_4 -> link_femur_4
+	"joint_foot-b-2_femur-4" [label="foot-b-2_femur-4" color=green fillcolor=lightgrey style=filled]
+	link_femur_4 -> "joint_foot-b-2_femur-4"
+	"link_foot-b-2" [label="foot-b-2" color=blue fillcolor=lightgrey shape=box style=filled]
+	"joint_foot-b-2_femur-4" -> "link_foot-b-2"
+}

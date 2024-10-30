@@ -1,0 +1,41 @@
+[0.016s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake /home/parsa/ros2_urdf_ws/src/my_robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/parsa/ros2_urdf_ws/install/my_robot_bringup
+[0.122s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.337s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.391s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.763s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.818s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.892s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.990s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.087s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.628s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.649s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.030s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.968s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[4.479s] -- Configuring done
+[4.526s] -- Generating done
+[4.533s] -- Build files have been written to: /home/parsa/ros2_urdf_ws/build/my_robot_bringup
+[4.548s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake /home/parsa/ros2_urdf_ws/src/my_robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/parsa/ros2_urdf_ws/install/my_robot_bringup
+[4.551s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_bringup -- -j3 -l3
+[4.612s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_bringup -- -j3 -l3
+[4.660s] Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_bringup
+[4.670s] -- Install configuration: ""
+[4.670s] -- Execute custom install script
+[4.683s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup//launch/my_robot_gazebo.launch.xml
+[4.694s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup//rviz/urdf.rviz
+[4.705s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup//config/joint_controller.yaml
+[4.707s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup
+[4.711s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup
+[4.712s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh
+[4.713s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv
+[4.715s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh
+[4.716s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv
+[4.717s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash
+[4.718s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh
+[4.723s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh
+[4.724s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv
+[4.724s] -- Symlinking: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv
+[4.790s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup
+[4.791s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake
+[4.791s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake
+[4.792s] -- Up-to-date symlink: /home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.xml
+[4.796s] Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_bringup

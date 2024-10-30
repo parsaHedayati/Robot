@@ -1,0 +1,5 @@
+[console_scripts]
+command_publisher = inverse_kinematics.command_publisher:main
+inverse_kinematics_node = inverse_kinematics.inverse_kinematics_node:main
+movement_node = inverse_kinematics.movement_node:main
+

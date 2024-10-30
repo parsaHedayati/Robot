@@ -1,0 +1,23 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/jointStateBroadcaster
+
+name_of_controller:
+  ros_parameters:
+    joints:
+      - base_torso_f_1
+      - base_torso_f_2
+      - base_torso_b_1
+      - base_torso_b_2
+    interface_name: position
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

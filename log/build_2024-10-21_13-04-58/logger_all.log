@@ -1,0 +1,254 @@
+[5.809s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[5.809s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77ba9f1ab3d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77ba9f1aad40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77ba9f1aad40>>, mixin_verb=('build',))
+[11.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[11.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[11.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[11.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[11.629s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[11.630s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[11.630s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/parsa/ros2_urdf_ws'
+[11.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[11.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[11.630s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[11.634s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[11.634s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[11.634s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[11.634s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[11.635s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[11.635s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[11.816s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[11.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[11.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[11.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[11.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[11.822s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[11.822s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[11.823s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[11.823s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[11.824s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[11.825s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[11.825s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[11.826s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[11.826s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[11.840s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[11.841s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[11.841s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[11.841s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[11.841s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[11.845s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[11.845s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[11.845s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[11.845s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[11.845s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[11.845s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[11.846s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[11.846s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[11.846s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[11.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[11.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extension 'ignore'
+[11.876s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extension 'ignore_ament_install'
+[11.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extensions ['colcon_pkg']
+[11.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extension 'colcon_pkg'
+[11.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extensions ['colcon_meta']
+[11.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extension 'colcon_meta'
+[11.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extensions ['ros']
+[11.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/inverse_kinematics) by extension 'ros'
+[11.951s] DEBUG:colcon.colcon_core.package_identification:Package 'src/inverse_kinematics' with type 'ros.ament_python' and name 'inverse_kinematics'
+[11.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[11.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore'
+[11.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore_ament_install'
+[11.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_pkg']
+[11.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_pkg'
+[11.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_meta']
+[11.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_meta'
+[11.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ros']
+[11.973s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ros'
+[11.998s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_bringup' with type 'ros.ament_cmake' and name 'my_robot_bringup'
+[12.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[12.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore'
+[12.012s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore_ament_install'
+[12.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_pkg']
+[12.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_pkg'
+[12.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_meta']
+[12.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_meta'
+[12.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ros']
+[12.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ros'
+[12.061s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_description' with type 'ros.ament_cmake' and name 'my_robot_description'
+[12.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[12.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[12.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[12.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[12.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[12.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[12.712s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[12.737s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/parsa/ros2_urdf_ws/install
+[12.738s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in //home/parsa/ros2_urdf_ws/install
+[12.741s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 343 installed packages in /opt/ros/humble
+[12.759s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[13.014s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'cmake_args' from command line to 'None'
+[13.014s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'cmake_target' from command line to 'None'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[13.015s] Level 5:colcon.colcon_core.verb:set package 'inverse_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.015s] DEBUG:colcon.colcon_core.verb:Building package 'inverse_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parsa/ros2_urdf_ws/build/inverse_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parsa/ros2_urdf_ws/install/inverse_kinematics', 'merge_install': False, 'path': '/home/parsa/ros2_urdf_ws/src/inverse_kinematics', 'symlink_install': False, 'test_result_base': None}
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_args' from command line to 'None'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target' from command line to 'None'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[13.016s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[13.017s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.017s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parsa/ros2_urdf_ws/build/my_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parsa/ros2_urdf_ws/install/my_robot_description', 'merge_install': False, 'path': '/home/parsa/ros2_urdf_ws/src/my_robot_description', 'symlink_install': False, 'test_result_base': None}
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_args' from command line to 'None'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target' from command line to 'None'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[13.018s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[13.018s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parsa/ros2_urdf_ws/build/my_robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parsa/ros2_urdf_ws/install/my_robot_bringup', 'merge_install': False, 'path': '/home/parsa/ros2_urdf_ws/src/my_robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[13.019s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[13.020s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[13.021s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parsa/ros2_urdf_ws/src/my_robot_description' with build type 'ament_cmake'
+[13.023s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parsa/ros2_urdf_ws/src/my_robot_description'
+[13.071s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[13.071s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.071s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.145s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/parsa/ros2_urdf_ws/src/inverse_kinematics' with build type 'ament_python'
+[13.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('inverse_kinematics', 'ament_prefix_path')
+[13.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/hook/ament_prefix_path.ps1'
+[13.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/hook/ament_prefix_path.dsv'
+[13.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/hook/ament_prefix_path.sh'
+[13.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_description -- -j3 -l3
+[14.018s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'inverse_kinematics' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[14.019s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'inverse_kinematics' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[14.019s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/parsa/ros2_urdf_ws/src/inverse_kinematics'
+[14.020s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.020s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_description -- -j3 -l3
+[14.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_description
+[14.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[14.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_description
+[14.773s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description' for CMake module files
+[14.774s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description' for CMake config files
+[14.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[14.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[14.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[14.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[14.781s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/bin'
+[14.781s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[14.782s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/lib/python3.10/site-packages'
+[14.782s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/bin'
+[14.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[14.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[14.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[14.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[14.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[14.823s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parsa/ros2_urdf_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[14.921s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[14.921s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description' for CMake module files
+[14.922s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description' for CMake config files
+[14.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[14.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[14.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[14.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[14.926s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/bin'
+[14.926s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[14.926s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/lib/python3.10/site-packages'
+[14.927s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_description/bin'
+[14.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[14.928s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[14.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[14.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[14.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[14.931s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parsa/ros2_urdf_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[14.931s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parsa/ros2_urdf_ws/src/my_robot_bringup' with build type 'ament_cmake'
+[14.931s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parsa/ros2_urdf_ws/src/my_robot_bringup'
+[14.932s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.932s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_bringup -- -j3 -l3
+[15.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --build /home/parsa/ros2_urdf_ws/build/my_robot_bringup -- -j3 -l3
+[15.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_bringup
+[15.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[15.874s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup' for CMake module files
+[15.875s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup' for CMake config files
+[15.875s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[15.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[15.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parsa/ros2_urdf_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_bringup://home/parsa/ros2_urdf_ws/install/my_robot_description:/home/parsa/ros2_urdf_ws/install/inverse_kinematics://home/parsa/ros2_urdf_ws/install/inverse_kinematics:/opt/ros/humble /usr/bin/cmake --install /home/parsa/ros2_urdf_ws/build/my_robot_bringup
+[15.877s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[15.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[15.880s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/bin'
+[15.880s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[15.881s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/lib/python3.10/site-packages'
+[15.881s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/bin'
+[15.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[15.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[15.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[15.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[15.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[15.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[15.913s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[15.914s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup' for CMake module files
+[15.915s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup' for CMake config files
+[15.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[15.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[15.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[15.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[15.917s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/bin'
+[15.917s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[15.918s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/lib/python3.10/site-packages'
+[15.918s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/bin'
+[15.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[15.920s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[15.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[15.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[15.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[15.922s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parsa/ros2_urdf_ws/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[17.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parsa/ros2_urdf_ws/src/inverse_kinematics': PYTHONPATH=/home/parsa/ros2_urdf_ws/build/inverse_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/inverse_kinematics build --build-base /home/parsa/ros2_urdf_ws/build/inverse_kinematics/build install --record /home/parsa/ros2_urdf_ws/build/inverse_kinematics/install.log --single-version-externally-managed
+[19.035s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics' for CMake module files
+[19.036s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics' for CMake config files
+[19.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parsa/ros2_urdf_ws/src/inverse_kinematics' returned '0': PYTHONPATH=/home/parsa/ros2_urdf_ws/build/inverse_kinematics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/inverse_kinematics build --build-base /home/parsa/ros2_urdf_ws/build/inverse_kinematics/build install --record /home/parsa/ros2_urdf_ws/build/inverse_kinematics/install.log --single-version-externally-managed
+[19.038s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib'
+[19.038s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/bin'
+[19.038s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/pkgconfig/inverse_kinematics.pc'
+[19.039s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/lib/python3.10/site-packages'
+[19.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('inverse_kinematics', 'pythonpath')
+[19.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/hook/pythonpath.ps1'
+[19.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/hook/pythonpath.dsv'
+[19.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/hook/pythonpath.sh'
+[19.041s] Level 1:colcon.colcon_core.environment:checking '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/bin'
+[19.041s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(inverse_kinematics)
+[19.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/package.ps1'
+[19.042s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/package.dsv'
+[19.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/package.sh'
+[19.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/package.bash'
+[19.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/inverse_kinematics/package.zsh'
+[19.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parsa/ros2_urdf_ws/install/inverse_kinematics/share/colcon-core/packages/inverse_kinematics)
+[19.045s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.045s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.045s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[19.045s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.112s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.113s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.113s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.130s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.130s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parsa/ros2_urdf_ws/install/local_setup.ps1'
+[19.160s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/parsa/ros2_urdf_ws/install/_local_setup_util_ps1.py'
+[19.176s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parsa/ros2_urdf_ws/install/setup.ps1'
+[19.178s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parsa/ros2_urdf_ws/install/local_setup.sh'
+[19.179s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/parsa/ros2_urdf_ws/install/_local_setup_util_sh.py'
+[19.180s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parsa/ros2_urdf_ws/install/setup.sh'
+[19.182s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parsa/ros2_urdf_ws/install/local_setup.bash'
+[19.183s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parsa/ros2_urdf_ws/install/setup.bash'
+[19.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parsa/ros2_urdf_ws/install/local_setup.zsh'
+[19.217s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parsa/ros2_urdf_ws/install/setup.zsh'
