@@ -2,8 +2,8 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, Float64MultiArray
-from inverse_kinematics.inverse_kinematics import LegKinematics  # Import your LegKinematics class
-from inverse_kinematics.movement import Movement  # Import your Movement class
+from inverse_kinematics.inverse_kinematics import LegKinematics  # Import  LegKinematics class
+from inverse_kinematics.movement import Movement  # Import  Movement class
 
 class MovementNode(Node):
     def __init__(self):
