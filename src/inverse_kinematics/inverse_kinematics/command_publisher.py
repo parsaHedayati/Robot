@@ -19,7 +19,6 @@ def main(args=None):
     rclpy.init(args=args)
     node = CommandPublisher()
 
-    # Example: send a stand command
     node.send_command("stand")
 
     rclpy.spin(node)
