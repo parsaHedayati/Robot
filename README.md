@@ -59,6 +59,7 @@ colcon build
 source install/setup.bash 
 
 3.Launch Simulation:
+  ros2 launch my_robot_description display.laucnh.xml
 
 4.Deploy to ESP32:
 Follow the steps in the micro-ros/README.md to flash the micro-ROS firmware to your ESP32.
