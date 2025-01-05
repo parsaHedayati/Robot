@@ -1,8 +1,9 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int8
+from std_msgs.msg import String, Float32
 from geometry_msgs.msg import Point
 from inverse_kinematics.inverse_kinematics import LegKinematics
+from inverse_kinematics.movement import Movement
 
 class LegKinematicsNode(Node):
     def __init__(self):
@@ -15,33 +16,44 @@ class LegKinematicsNode(Node):
         distance_from_ground = 8.5
 
         self.kinematics = LegKinematics(femur_length, foot_length, coxa_length, distance_from_ground)
+        self.movement = Movement(self.kinematics)
 
-        # ROS 2 subscriber for the target position
-        self.subscription = self.create_subscription(
-            Point, 'target_position', self.position_callback, 10)
+        # ROS 2 subscriber for the command topic
+        self.command_subscription = self.create_subscription(
+            String, 'command', self.command_callback, 10)
 
-        # Publishers for each servo
-        self.servo_publishers = [
-            self.create_publisher(Int8, f'/servo{i}', 10) for i in range(12)
+        # Publishers for each joint angle
+        self.angle_publishers = [
+            self.create_publisher(Float32, f'/leg_{i}_angle_{j}', 10) for i in range(4) for j in range(3)
         ]
 
-    def position_callback(self, msg):
-        roll, pitch, yaw = 0.0, 0.0, 0.0  # Adjust for actual usage
-
+    def command_callback(self, msg):
         try:
-            # Calculate joint angles using the kinematics
-            angles = self.kinematics.calculate_angles(msg.x, msg.y, msg.z, roll, pitch, yaw)
+            command = msg.data
 
-            # Publish each joint angle to its corresponding topic
-            for i, angle in enumerate(angles):
-                angle_msg = Int8()
-                angle_msg.data = int(angle)  # Ensure angle is an integer
-                self.servo_publishers[i].publish(angle_msg)
+            if command == "stand":
+                angles_dict = self.movement.execute_command("stand")
+            elif command == "move_forward":
+                angles_sequence = self.movement.execute_command("move_forward")
+                for angles_dict in angles_sequence:
+                    self.publish_angles(angles_dict)
+                    self.get_logger().info(f'Published angles for step: {angles_dict}')
+                return
 
-            self.get_logger().info(f'Published angles: {angles}')
+            self.publish_angles(angles_dict)
 
         except ValueError as e:
             self.get_logger().error(f'Error in kinematics calculation: {e}')
+
+    def publish_angles(self, angles_dict):
+        for leg, angles in angles_dict.items():
+            for j, angle in enumerate(angles):
+                angle_msg = Float32()
+                angle_msg.data = float(angle)
+                leg_index = ["FL", "FR", "BL", "BR"].index(leg)
+                self.angle_publishers[leg_index * 3 + j].publish(angle_msg)
+
+        self.get_logger().info(f'Published angles: {angles_dict}')
 
 def main(args=None):
     rclpy.init(args=args)
