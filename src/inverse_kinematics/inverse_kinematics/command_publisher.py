@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# command_publisher.py
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -19,6 +19,7 @@ def main(args=None):
     rclpy.init(args=args)
     node = CommandPublisher()
 
+    
     node.send_command("stand")
 
     rclpy.spin(node)
