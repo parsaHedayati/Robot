@@ -1,63 +1,51 @@
-#!/usr/bin/env python
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String, Float64MultiArray
-from inverse_kinematics.inverse_kinematics import LegKinematics  # Import your LegKinematics class
-from inverse_kinematics.movement import Movement  # Import your Movement class
+from std_msgs.msg import Int8
+from geometry_msgs.msg import Point
+from inverse_kinematics.inverse_kinematics import LegKinematics
 
-class MovementNode(Node):
+class LegKinematicsNode(Node):
     def __init__(self):
-        super().__init__('movement_node')
+        super().__init__('inverse_kinematics_node')
 
-        # Initialize kinematics values (in cm)
-        torso_length = 30.6
-        femur_length = 49.5
-        foot_length = 100.2
-        offsets = {
-            "FL": (6, 4.35),
-            "FR": (6, -4.35),
-            "BL": (-6, 4.35),
-            "BR": (-6, -4.35)
-        }
-        
-        # Initialize LegKinematics and Movement classes
-        leg_kinematics = LegKinematics(torso_length, femur_length, foot_length, offsets)
-        self.movement = Movement(leg_kinematics)
+        # Define limb lengths and parameters (in cm)
+        femur_length = 4.0
+        foot_length = 8.0
+        coxa_length = 3.0
+        distance_from_ground = 8.5
 
-        # Create subscriber to receive commands
+        self.kinematics = LegKinematics(femur_length, foot_length, coxa_length, distance_from_ground)
+
+        # ROS 2 subscriber for the target position
         self.subscription = self.create_subscription(
-            String,
-            'command',
-            self.command_callback,
-            10
-        )
+            Point, 'target_position', self.position_callback, 10)
 
-        # Create publisher for joint angles
-        self.publisher = self.create_publisher(Float64MultiArray, 'joint_angles', 10)
-        self.get_logger().info("MovementNode started, waiting for commands...")
+        # Publishers for each servo
+        self.servo_publishers = [
+            self.create_publisher(Int8, f'/servo{i}', 10) for i in range(12)
+        ]
 
-    def command_callback(self, msg):
-        command = msg.data
+    def position_callback(self, msg):
+        roll, pitch, yaw = 0.0, 0.0, 0.0  # Adjust for actual usage
 
         try:
-            # Calculate joint angles based on command
-            results = self.movement.execute_command(command)
+            # Calculate joint angles using the kinematics
+            angles = self.kinematics.calculate_angles(msg.x, msg.y, msg.z, roll, pitch, yaw)
 
-            # Create Float64MultiArray message to publish the angles
-            angles_msg = Float64MultiArray()
-            for angles in results.values():
-                angles_msg.data.extend(angles)  # Add (hip, femur, foot) angles for each leg
+            # Publish each joint angle to its corresponding topic
+            for i, angle in enumerate(angles):
+                angle_msg = Int8()
+                angle_msg.data = int(angle)  # Ensure angle is an integer
+                self.servo_publishers[i].publish(angle_msg)
 
-            # Publish the joint angles
-            self.publisher.publish(angles_msg)
-            self.get_logger().info(f'Published angles for command "{command}": {angles_msg.data}')
+            self.get_logger().info(f'Published angles: {angles}')
 
         except ValueError as e:
-            self.get_logger().error(f'Error in movement execution: {e}')
+            self.get_logger().error(f'Error in kinematics calculation: {e}')
 
 def main(args=None):
     rclpy.init(args=args)
-    node = MovementNode()
+    node = LegKinematicsNode()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
