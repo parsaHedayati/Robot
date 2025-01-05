@@ -22,6 +22,12 @@ def main(args=None):
     
     node.send_command("stand")
 
+    
+    rclpy.spin_once(node, timeout_sec=2.0)
+
+    
+    node.send_command("move_forward")
+
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
